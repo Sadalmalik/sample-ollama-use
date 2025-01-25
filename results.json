@@ -1,0 +1,14 @@
+[
+  {"category": "design", "requirements": [
+    "Improve colors, make button colors more distinguishable",
+    "Simplify the design, remove unnecessary nesting of menus"
+  ]},
+  {"category": "code", "requirements": [
+    "Perform general optimization of the application",
+    "Find the reason for the slowdown when opening the settings window",
+    "fix multiple resource tab opening"
+  ]},
+  {"category": "tools", "requirements": [
+    "add missing element finder tool"
+  ]}
+]

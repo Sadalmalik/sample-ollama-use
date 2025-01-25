@@ -1,0 +1,99 @@
+<think>
+Okay, I need to tackle this problem where I have a set of app reviews and an existing result JSON. My task is to read through all the reviews, identify any new tasks that aren't already in the result, and then add those missing tasks to the appropriate category in the result JSON.
+
+First, let me go through each review one by one and note down the main issues mentioned.
+
+The first review talks about the interface being hard to navigate because there are too many buttons with colors that blend together. This makes it difficult to distinguish between buttons and text. Also, navigating through nested menus is an issue here.
+
+Moving on to the second review, the user had trouble creating a resource set because the app was hard to use. They mention having to go through multiple layers of menus just to open a needed tab. There's also an issue with duplicate tabs; one user had a resources tab opening five times, which is confusing and adds to the problem.
+
+The third review points out that the app lags, especially in settings. The user tried fixing it but found that the settings window was the slowest part of the application. So, improving performance, particularly in the settings area, seems necessary.
+
+In the fourth review, the user likes the app overall but misses a tool for finding missing elements. That's already noted in the existing result under tools category.
+
+The fifth and last review is quite detailed. The user mentions several issues: menus are too tangled and should be categorized instead of being deeply nested; there's a lack of documentation across all functionalities, which can confuse users; they want a feature to load the last session, which would save time; adding a missing elements finder tool again comes up; and finally, having a separate window for templates would be helpful.
+
+Now, looking at the existing result JSON:
+
+- Under "design", there are tasks about improving colors and simplifying design by removing menu nesting. That covers the issues from the first review.
+- In the "code" category, the tasks include general optimization, fixing slowdown in settings, and preventing multiple tab openings. These address the performance and duplicate tabs mentioned in reviews two and three.
+- The "tools" section already includes adding a missing element finder tool, which was pointed out in the fourth review.
+
+However, the fifth review brings up several new points that aren't covered yet:
+1. Lack of documentation for all functionalities.
+2. Need for a feature to load the last session.
+3. Request for an additional window listing templates.
+
+I need to categorize these tasks correctly. The lack of documentation is about information structure, so it should go under "documentation". The session loading and template window features seem like new tools or enhancements, so they might fit into either the "tools" or a new category if one isn't appropriate. Since "tools" already exist, adding them there makes sense.
+
+Wait, actually, the fifth review also mentions that menus are tangled and should be categorized. That was already covered in the design section by simplifying nesting. So no new task here.
+
+Therefore, the missing tasks to add are:
+- Improve documentation across all functionalities.
+- Add a feature to load the last session.
+- Create an additional window for templates.
+
+These need to be added under appropriate categories. The first one about documentation could go into "documentation" if that's a category; otherwise, perhaps under "usability" or another relevant section. But in the existing result, there are only design, code, and tools. So maybe I should create a new category for documentation.
+
+Alternatively, since the fifth review mentions several points, but some were already covered. The lack of documentation is a separate issue not yet addressed. Session loading and template window are also new under "tools".
+
+Wait, looking back at the existing result, there's no "documentation" category. So I'll need to add that as a new category with the task of improving documentation.
+
+Similarly, for the session loading and templates, these can be added under the "tools" section since they're features users want.
+
+So, in summary:
+
+- Add "Improve overall documentation across all functionalities" under a new "documentation" category.
+- Add "Add feature to load last session" under "tools".
+- Add "Create separate window for template list" also under "tools".
+
+I should structure the JSON accordingly, ensuring that each task is correctly categorized and added as a requirement.
+
+Wait, but in the existing result, there are three categories: design, code, tools. So adding documentation would require introducing a fourth category, which might not be intended unless necessary. Alternatively, perhaps some of these tasks can fit into existing categories better.
+
+For example, improving documentation could fall under "usability" or "information structure", but since those aren't present, maybe it's best to create a new category for documentation.
+
+Alternatively, if the user expects only three categories, I might have to see if any of these tasks can be grouped elsewhere. But given that documentation is about information and not design, code, or tools, it makes sense as its own category.
+
+Therefore, the final result should include:
+
+1. The existing entries under design, code, and tools.
+2. A new entry under "documentation" with the task of improving overall documentation.
+3. Under "tools", adding two more requirements: load last session and template window.
+
+I need to make sure I present this in the correct JSON format without any markdown, just plain text as per the user's instruction.
+</think>
+
+```json
+[
+    {
+        "category": "design",
+        "requirements": [
+            "Improve colors, make button colors more distinguishable",
+            "Simplify the design, remove unnecessary nesting of menus"
+        ]
+    },
+    {
+        "category": "code",
+        "requirements": [
+            "Perform general optimization of the application",
+            "Find the reason for the slowdown when opening the settings window",
+            "fix multiple resource tab opening"
+        ]
+    },
+    {
+        "category": "tools",
+        "requirements": [
+            "add missing element finder tool",
+            "Add feature to load last session",
+            "Create separate window for template list"
+        ]
+    },
+    {
+        "category": "documentation",
+        "requirements": [
+            "Improve overall documentation across all functionalities"
+        ]
+    }
+]
+```
