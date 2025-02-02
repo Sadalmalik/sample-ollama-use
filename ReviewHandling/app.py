@@ -7,6 +7,7 @@ Below are two jsons.
 One contains reviews for some app.
 The second contains the processed result of the reviews as a list of specific tasks to improve the app.
 You have to read all the reviews and add the missing tasks to the resulting json and print it here.
+If necessary, fill in the missing categories.
 
 Reviews:
 {{reviews}}
